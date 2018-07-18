@@ -16,6 +16,7 @@ public class YahooSearchMethods {
 	static WebDriver driver;
 
 	public static void main(String[] args) {
+		
 		setUp("chrome", "http://www.yahoo.com");
 
 		searchYahoo("Selenium");
@@ -60,6 +61,7 @@ public class YahooSearchMethods {
 		switch(browser) {
 		case "chrome":
 			//System.setProperty("webdriver.chrome.driver", "/usr/jnavarro/test");
+			System.setProperty("webdriver.chrome.driver", "C:\\test_automation\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 		case "firefox":
